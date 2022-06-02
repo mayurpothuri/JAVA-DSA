@@ -1,3 +1,4 @@
+package Getting_Started.Print_Z;
 import java.util.*;
 
 public class PrintZ{
