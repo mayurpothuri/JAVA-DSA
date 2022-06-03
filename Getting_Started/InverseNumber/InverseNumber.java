@@ -10,6 +10,7 @@ public class InverseNumber {
         scanner.close();
     }
 
+    //time complexity - O(d) where d => #digits in number n.
     private static void inverseNumber(int n) {
         int ans = 0, count = 1;
         while(n > 0){
