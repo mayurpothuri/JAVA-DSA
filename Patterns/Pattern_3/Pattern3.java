@@ -1,17 +1,16 @@
-package Patterns.Pattern_2;
+package Patterns.Pattern_3;
 import java.util.*;
 
-//print below pattern
 //n = 5
-
+//        *
+//      * *
+//    * * *
+//  * * * *
 //* * * * *
-//* * * *
-//* * *
-//* * 
-//*
 
-public class Pattern2 {
+public class Pattern3 {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         printPattern(n);
@@ -21,10 +20,16 @@ public class Pattern2 {
 
     private static void printPattern(int n) {
 
+        int spaces = n - 1, stars = 1;
         for(int i = 0; i < n; i++){
-            for(int j = n - i; j > 0; j--){
+            for(int j = 0; j < spaces; j++){
+                System.out.print("\t");
+            }
+            for(int j = 0; j < stars; j++){
                 System.out.print("*\t");
             }
+            stars++;
+            spaces--;
             System.out.println();
         }
         return;
