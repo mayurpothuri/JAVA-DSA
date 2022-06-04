@@ -1,6 +1,13 @@
 package Patterns.Pattern_9;
 import java.util.*;
 
+//n = 5
+//  *				*	
+//  	*		*		
+//  		*			
+//  	*		*		
+//  *				*	
+
 public class Pattern9 {
     public static void main(String[] args) {
 
