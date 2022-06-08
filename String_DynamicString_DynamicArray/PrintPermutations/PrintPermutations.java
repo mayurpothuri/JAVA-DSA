@@ -41,7 +41,7 @@ public class PrintPermutations {
         return;
     }
 
-    //time complexity - O(n!*n!*n), first calculate factorial ans then,
+    //time complexity - O(n!*n*n), first calculate factorial ans then,
     // as for each permutations[total n! permutations], we are checking
     //for choices of characters
     private static void getPermutations1(String str) {
@@ -63,7 +63,7 @@ public class PrintPermutations {
         return;
     }
 
-    //time complexity - O(n!)
+    //time complexity - O(n)
     private static int getFactorial(int n) {
         int val = 1;
         for(int i = 1; i <= n; i++){
